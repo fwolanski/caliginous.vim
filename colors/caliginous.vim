@@ -32,6 +32,12 @@ let s:cterm0B = "02"
 let s:cterm0C = "06"
 let s:cterm0D = "04"
 let s:cterm0E = "05"
+let s:cterm01 = "10"
+let s:cterm02 = "11"
+let s:cterm04 = "12"
+let s:cterm06 = "13"
+let s:cterm09 = "09"
+let s:cterm0F = "14"
 
 " Theme setup
 hi clear
