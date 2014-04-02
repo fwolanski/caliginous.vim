@@ -246,6 +246,7 @@ call <sid>hi("sassMixinName",  s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("javaScript",        s:gui05, "", s:cterm05, "", "")
 call <sid>hi("javaScriptBraces",  s:gui05, "", s:cterm05, "", "")
 call <sid>hi("javaScriptNumber",  s:gui09, "", s:cterm09, "", "")
+call <sid>hi("jsFuncBlock",  s:gui02, "", s:cterm09, "", "")
 
 " Markdown highlighting
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "")
