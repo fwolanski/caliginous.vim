@@ -221,6 +221,11 @@ call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "")
 " Coffeescript highlighting
 call <sid>hi("coffeeObjAssign",  s:gui05, "", s:cterm05, "", "")
 
+" MYSQL highlighting
+call <sid>hi("mysqlKeyword",  s:gui09, "", s:cterm05, "", "")
+call <sid>hi("mysqlOperator",  s:gui09, "", s:cterm05, "", "")
+call <sid>hi("mysqlFlow",  s:gui09, "", s:cterm05, "", "")
+
 " Remove function
 delf <sid>hi
 
