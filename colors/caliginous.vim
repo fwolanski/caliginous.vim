@@ -2,24 +2,49 @@
 " Author: Filip Wolanski
 " Templated from: Base 16 (https://github.com/chriskempson/base16)
 
-" GUI color definitions
-let s:gui00 = "000000"
-let s:gui01 = "001821"
-let s:gui02 = "275c67"
-let s:gui03 = "44737f"
-let s:gui04 = "5d8c98"
-let s:gui05 = "b58300"
-let s:gui06 = "d2ca9c"
-let s:gui07 = "ebeace"
 
-let s:gui08 = "787878"
-let s:gui09 = "b3aa77"
-let s:gui0A = "b97128"
-let s:gui0B = "64a179"
-let s:gui0C = "7a82b5"
-let s:gui0D = "638a9f"
-let s:gui0E = "548e8e"
-let s:gui0F = "616161"
+if &background == "light"
+  " GUI color definitions
+  let s:gui00 = "ffffff"
+  let s:gui01 = "ebf2f4" " ced6d8
+  let s:gui02 = "91b0bc" " 797e80
+  let s:gui03 = "2e4d55"
+  let s:gui04 = "244c59" " 555859
+  let s:gui05 = "b84202" " 9b7000
+  let s:gui06 = "605c47"
+  let s:gui07 = "75a03d" " 5a5a4f
+
+  let s:gui08 = "787878"
+  let s:gui09 = "b39f30" " 776a20
+  let s:gui0A = "90581f"
+  let s:gui0B = "2b944e" " 1b5d31
+  let s:gui0C = "7a82b5"
+  let s:gui0D = "575d81"
+  let s:gui0E = "548e8e"
+  let s:gui0F = "616161"
+
+else
+  " GUI color definitions
+  let s:gui00 = "000000"
+  let s:gui01 = "001821"
+  let s:gui02 = "275c67"
+  let s:gui03 = "44737f"
+  let s:gui04 = "5d8c98"
+  let s:gui05 = "b58300"
+  let s:gui06 = "d2ca9c"
+  let s:gui07 = "ebeace"
+
+  let s:gui08 = "787878"
+  let s:gui09 = "b3aa77"
+  let s:gui0A = "b97128"
+  let s:gui0B = "64a179"
+  let s:gui0C = "7a82b5"
+  let s:gui0D = "638a9f"
+  let s:gui0E = "548e8e"
+  let s:gui0F = "616161"
+
+endif
+
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -114,12 +139,12 @@ set fillchars+=vert:\│
 call <sid>hi("Boolean",      s:gui06, "", s:cterm06, "", "")
 call <sid>hi("Character",    s:gui05, "", s:cterm05, "", "")
 call <sid>hi("Comment",      s:gui02, "", s:cterm02, "", "italic")
-call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "")
+call <sid>hi("Conditional",  s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("Constant",     s:gui08, "", s:cterm08, "", "")
-call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none")
+call <sid>hi("Define",       s:gui05, "", s:cterm05, "", "none")
 call <sid>hi("Delimiter",    s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("Float",        s:gui09, "", s:cterm09, "", "")
-call <sid>hi("Function",     s:gui09, "", s:cterm09, "", "")
+call <sid>hi("Function",     s:gui06, "", s:cterm06, "", "")
 call <sid>hi("Identifier",   s:gui04, "", s:cterm04, "", "none")
 call <sid>hi("Include",      s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("Keyword",      s:gui09, "", s:cterm09, "", "")
@@ -192,7 +217,7 @@ call <sid>hi("sassMixinName",  s:gui0D, "", s:cterm0D, "", "")
 call <sid>hi("javaScript",        s:gui05, "", s:cterm05, "", "")
 call <sid>hi("javaScriptBraces",  s:gui05, "", s:cterm05, "", "")
 call <sid>hi("javaScriptNumber",  s:gui09, "", s:cterm09, "", "")
-call <sid>hi("jsFuncBlock",  s:gui02, "", s:cterm09, "", "")
+call <sid>hi("jsFuncBlock",  s:gui04, "", s:cterm04, "", "")
 
 " Markdown highlighting
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "")
@@ -222,7 +247,7 @@ call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "")
 call <sid>hi("coffeeObjAssign",  s:gui05, "", s:cterm05, "", "")
 
 " MYSQL highlighting
-call <sid>hi("mysqlKeyword",  s:gui09, "", s:cterm05, "", "")
+call <sid>hi("mysqlKeyword",  s:gui07, "", s:cterm05, "", "")
 call <sid>hi("mysqlOperator",  s:gui09, "", s:cterm05, "", "")
 call <sid>hi("mysqlFlow",  s:gui09, "", s:cterm05, "", "")
 
