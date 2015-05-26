@@ -5,23 +5,23 @@
 
 if &background == "light"
   " GUI color definitions
-  let s:gui00 = "ffffff"
-  let s:gui01 = "ebf2f4" " ced6d8
-  let s:gui02 = "91b0bc" " 797e80
-  let s:gui03 = "2e4d55"
-  let s:gui04 = "244c59" " 555859
-  let s:gui05 = "b84202" " 9b7000
-  let s:gui06 = "605c47"
-  let s:gui07 = "75a03d" " 5a5a4f
+  let s:gui00 = "ffffff" " 0
+  let s:gui01 = "ebf2f4" " 10
+  let s:gui02 = "91b0bc" " 11
+  let s:gui03 = "2e4d55" " 8
+  let s:gui04 = "244c59" " 12
+  let s:gui05 = "b84202" " 9
+  let s:gui06 = "605c47" " 13
+  let s:gui07 = "75a03d" " 15
 
-  let s:gui08 = "787878"
-  let s:gui09 = "b39f30" " 776a20
-  let s:gui0A = "90581f"
-  let s:gui0B = "2b944e" " 1b5d31
-  let s:gui0C = "7a82b5"
-  let s:gui0D = "575d81"
-  let s:gui0E = "548e8e"
-  let s:gui0F = "616161"
+  let s:gui08 = "787878" " 1
+  let s:gui09 = "986624" " 7
+  let s:gui0A = "90581f" " 3
+  let s:gui0B = "2b944e" " 2
+  let s:gui0C = "7a82b5" " 6
+  let s:gui0D = "486473" " 4
+  let s:gui0E = "548e8e" " 5
+  let s:gui0F = "616161" " 14
 
 else
   " GUI color definitions
@@ -35,7 +35,7 @@ else
   let s:gui07 = "ebeace"
 
   let s:gui08 = "787878"
-  let s:gui09 = "b3aa77"
+  let s:gui09 = "b3aa77" " b661b3
   let s:gui0A = "b97128"
   let s:gui0B = "64a179"
   let s:gui0C = "7a82b5"
@@ -49,7 +49,7 @@ endif
 " Terminal color definitions
 let s:cterm00 = "00"
 let s:cterm03 = "08"
-let s:cterm05 = "07"
+let s:cterm05 = "09"
 let s:cterm07 = "15"
 let s:cterm08 = "01"
 let s:cterm0A = "03"
@@ -61,7 +61,7 @@ let s:cterm01 = "10"
 let s:cterm02 = "11"
 let s:cterm04 = "12"
 let s:cterm06 = "13"
-let s:cterm09 = "09"
+let s:cterm09 = "07"
 let s:cterm0F = "14"
 
 " Theme setup
@@ -247,9 +247,13 @@ call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "")
 call <sid>hi("coffeeObjAssign",  s:gui05, "", s:cterm05, "", "")
 
 " MYSQL highlighting
-call <sid>hi("mysqlKeyword",  s:gui07, "", s:cterm05, "", "")
-call <sid>hi("mysqlOperator",  s:gui09, "", s:cterm05, "", "")
-call <sid>hi("mysqlFlow",  s:gui09, "", s:cterm05, "", "")
+call <sid>hi("mysqlKeyword",  s:gui07, "", s:cterm07, "", "")
+call <sid>hi("mysqlOperator",  s:gui09, "", s:cterm09, "", "")
+call <sid>hi("mysqlFlow",  s:gui09, "", s:cterm09, "", "")
+
+" Clojure
+call <sid>hi("clojureKeyword",  s:gui09, "", s:cterm09, "", "")
+
 
 " Remove function
 delf <sid>hi
