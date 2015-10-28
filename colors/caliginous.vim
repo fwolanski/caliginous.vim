@@ -4,12 +4,12 @@
 
 
 if &background == "light"
-  " GUI color definitions
+  " light color definitions
   let s:gui00 = "ffffff" " 0
   let s:gui01 = "ebf2f4" " 10
   let s:gui02 = "91b0bc" " 11
-  let s:gui03 = "2e4d55" " 8
-  let s:gui04 = "244c59" " 12
+  let s:gui03 = "000000" " 8  2e4d55
+  let s:gui04 = "12262d" " 12 244c59
   let s:gui05 = "b84202" " 9
   let s:gui06 = "605c47" " 13
   let s:gui07 = "75a03d" " 15
@@ -24,7 +24,7 @@ if &background == "light"
   let s:gui0F = "616161" " 14
 
 else
-  " GUI color definitions
+  " dark color definitions
   let s:gui00 = "000000"
   let s:gui01 = "001821"
   let s:gui02 = "275c67"
@@ -138,7 +138,7 @@ set fillchars+=vert:\│
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui06, "", s:cterm06, "", "")
 call <sid>hi("Character",    s:gui05, "", s:cterm05, "", "")
-call <sid>hi("Comment",      s:gui02, "", s:cterm02, "", "italic")
+call <sid>hi("Comment",      s:gui02, "", s:cterm02, "", "")
 call <sid>hi("Conditional",  s:gui0A, "", s:cterm0A, "", "")
 call <sid>hi("Constant",     s:gui08, "", s:cterm08, "", "")
 call <sid>hi("Define",       s:gui05, "", s:cterm05, "", "none")
